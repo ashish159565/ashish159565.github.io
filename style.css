@@ -381,6 +381,28 @@ section .button button:hover {
     margin: auto;
 }
 
+.contact .button{
+    --size: 60px;  
+    border: none;  
+    min-width: var(--size);  
+    min-height: var(--size);  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    font-size: 1.2rem;  
+    background: rgba(255, 255, 255, 0.08);  
+    color: #fff;  
+    transition: background 200ms ease, color 200ms ease;  
+    cursor: none;
+}
+
+.contact:hover button{  
+    background: rgba(255, 255, 255, 0.04);  
+    color: rgba(255, 255, 255, 0.04);  
+}  
+.contact:hover button:hover {  
+    color: #fff;  
+   }
 
 /* Footer CSS */
 
