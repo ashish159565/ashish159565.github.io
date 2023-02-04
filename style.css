@@ -1463,30 +1463,6 @@ ul {
     top: -50px;
 }
 
-.register-button {
-    padding: 50px -150px 50px 50px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0;
-    width: max-content;
-}
-
-.register-button a {
-    display: inline-block;
-    padding: 12px 12px;
-    color: #ffffff;
-    background: linear-gradient(10deg, #FD00FF, #FF1300);
-    border-radius: 30px;
-    font-size: 18px;
-    height: unset;
-    line-height: unset;
-    box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.2);
-    width: max-content;
-    text-align: center;
-}
-
 
 /*-----------------------------------------------
     12. Services Section Css
@@ -2676,6 +2652,31 @@ ul {
 
 .rs-partner .image-wrap a:hover img {
     filter: grayscale(0);
+}
+
+.register-button {
+    display: inline-block;
+    margin: 4px 2px 4px 665px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.register-button a {
+    display: inline-block;
+    padding: 12px 33px;
+    color: #ffffff;
+    background: linear-gradient(10deg, #FD00FF, #FF1300);
+    border-radius: 30px;
+    font-size: 15px;
+    height: unset;
+    line-height: unset;
+    box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+}
+
+.register-button a:hover {
+    background: linear-gradient(90deg, #FD00FF, #FF1300);
+    color: #ffffff !important;
 }
 
 
