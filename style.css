@@ -2655,19 +2655,19 @@ ul {
 }
 
 .register-button {
-    display: inline-block;
-    margin: 4px 2px 4px 665px;
+    display: fixed;
+    margin: 4px 2px 4px 655px;
     cursor: pointer;
     width: max-content;
 }
 
 .register-button a {
-    display: inline-block;
+    display: fixed;
     padding: 12px 33px;
     color: #ffffff;
     background: linear-gradient(10deg, #FD00FF, #FF1300);
     border-radius: 30px;
-    font-size: 15px;
+    font-size: 18px;
     height: unset;
     line-height: unset;
     box-shadow: 1px 4px 12px rgba(0, 0, 0, 0.2);
