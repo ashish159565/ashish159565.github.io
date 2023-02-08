@@ -2680,6 +2680,31 @@ ul {
 }
 
 
+/* for the register button */
+
+.responsive-div {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 12px 33px;
+    background: linear-gradient(10deg, #fd00ff, #ff1300);
+    color: #ffffff;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #FD00FF, #FF1300);
+    color: #ffffff !important;
+}
+
+
 /*-----------------------------------------------
     20. Footer Section Css
 -----------------------------------------------*/
@@ -3026,4 +3051,22 @@ ul {
         -o-transform: rotate(360deg);
         transform: rotate(360deg);
     }
+}
+
+
+/*-----------------------------------------------
+    22. RS Coming Soon CSS
+-----------------------------------------------*/
+
+.rs-coming-soon h1 {
+    text-align: center;
+    font-family: 'Kiwi Maru', serif;
+    text-decoration: underline;
+    font-size: 40px;
+}
+
+.rs-coming-soon img {
+    width: 55%;
+    margin: 0 auto;
+    display: block;
 }
