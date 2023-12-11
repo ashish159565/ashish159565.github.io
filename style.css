@@ -311,12 +311,6 @@ section .button button:hover {
     padding: 40px 0;
 }
 
-.skills .skills-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .skills-details .text {
     width: 50%;
 }
@@ -365,6 +359,17 @@ section .button button:hover {
 .skills-details .boxes .per {
     font-size: 60px;
     color: #4070f4;
+}
+
+.skills-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill {
+    padding: 10px;
+    font-size: large;
 }
 
 
