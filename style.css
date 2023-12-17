@@ -180,7 +180,7 @@ body {
     justify-content: center;
 }
 
-.text {
+.about .about-details .left .text {
     font-size: 60px;
     margin: 5px 0;
     font-weight: 500;
@@ -409,7 +409,7 @@ section .button button:hover {
 
 footer {
     background: #4070f4;
-    padding: 15px 0;
+    padding: 5px 0;
     text-align: center;
     font-family: 'Poppins', sans-serif;
 }
@@ -461,8 +461,8 @@ footer .text span a:hover {
     }
     .about .about-details .left {
         display: flex;
-        justify-content: center;
         width: 100%;
+        flex-direction: column;
     }
     .about-details .right {
         width: 90%;
@@ -557,6 +557,14 @@ footer .text span a:hover {
     .skills-details .boxes .per {
         font-size: 50px;
         color: #4070f4;
+    }
+    .about .about-details .right img {
+        max-width: 100%;
+        height: auto;
+    }
+    .about .about-details {
+        padding: 10px;
+        margin: 10px;
     }
 }
 
