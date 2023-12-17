@@ -135,14 +135,40 @@ nav.sticky .menu-btn {
 
 /* home section styling */
 
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    padding: 30px;
+    align-self: center;
+    align-content: center;
+}
+
+.flex-wrap-skills {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skill-logo {
+    height: 100px;
+    width: 90px;
+}
+
+body {
+    font-family: 'Montserrat', 'Ubuntu', sans-serif;
+}
+
+.h1 {
+    color: #0E2431;
+    margin-bottom: 10px;
+    text-align-last: center;
+}
+
 .home {
     height: 100vh;
     width: 100%;
-    background: url("Images/background.png") no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Montserrat', 'Ubuntu', sans-serif;
 }
 
 .home .home-content {
@@ -154,22 +180,15 @@ nav.sticky .menu-btn {
     justify-content: center;
 }
 
-.home .text-one {
-    font-size: 25px;
-    color: #f8fc06;
-}
-
-.home .text-two {
-    color: #f8fc06;
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-
-.home .text-three {
-    font-size: 40px;
+.text {
+    font-size: 60px;
     margin: 5px 0;
-    color: #3dee10;
+    font-weight: 500;
+}
+
+.left .p {
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .home .button {
@@ -216,6 +235,8 @@ section .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 60px;
+    margin: 50px;
 }
 
 section .title {
@@ -251,18 +272,15 @@ section .title span::after {
 }
 
 .about .about-details .left {
-    width: 45%;
+    width: 55%;
 }
 
-.about .left img {
+.about .right img {
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 12px;
-}
-
-.about-details .right {
-    width: 55%;
+    border: 2px solid black;
 }
 
 section .topic {
@@ -305,10 +323,6 @@ section .button button:hover {
 
 .skills {
     background: #F0F8FF;
-}
-
-.skills .content {
-    padding: 40px 0;
 }
 
 .skills-details .text {
@@ -425,7 +439,6 @@ footer .text span a:hover {
     color: #fff;
     background: #4070f4;
     padding: 7px 12px;
-    ;
     font-size: 18px;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.15);
@@ -462,9 +475,10 @@ footer .text span a:hover {
 }
 
 @media (max-width: 900px) {
-    .about .left img {
+    .about .right img {
         height: 350px;
         width: 350px;
+        border: 2px solid black;
     }
 }
 
@@ -544,4 +558,52 @@ footer .text span a:hover {
         font-size: 50px;
         color: #4070f4;
     }
+}
+
+.skills-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-card img {
+    width: 100%;
+    height: 100%;
+}
+
+.skill-card h2 {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.skill-card {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.skill-card-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+#resume-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4070f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 50px;
 }

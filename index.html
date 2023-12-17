@@ -20,137 +20,83 @@
         <div class="navbar">
             <div class="logo"><a href="#">Ashish Gajjela</a></div>
             <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about">Home</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <div class="cancel-btn">
-                    <i class="fas fa-times"></i>
-                </div>
+                <li><a href="https://www.linkedin.com/in/ashish-gajjela-761a21203/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/ashish159565/" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="mailto:ashishgajjela055@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="tel:+918978821582" target="_blank"><i class="fa-solid fa-phone"></i></a></li>
             </ul>
-            <div class="media-icons">
-                <a href="https://www.linkedin.com/in/ashish-gajjela-761a21203/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/ashish159565/" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="mailto:ashishgajjela055@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                <a href="tel:+918978821582" target="_blank"><i class="fa-solid fa-phone"></i></a>
-            </div>
         </div>
         <div class="menu-btn">
             <i class="fas fa-bars"></i>
         </div>
     </nav>
 
-    <!-- Home Section Start -->
-    <section class="home" id="home">
-        <div class="home-content">
-            <div class="text">
-                <div class="text-one">Hello,</div>
-                <div class="text-two">I'm Ashish Gajjela</div>
-                <div class="text-three">from India</div>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section Start -->
     <section class="about" id="about">
-        <div class="content">
-            <div class="title"><span>About Me</span></div>
-            <div class="about-details">
-                <div class="left">
-                    <img src="Images/about.jpg" alt="">
-                </div>
-                <div class="right">
-                    <div class="topic">Programming Lead at coding.Studio( ); with expertise in React, TypeScript, Firebase</div>
-                    <p>As coding.Studio( );'s Programming Lead, I mentor and guide 11 developers in delivering innovative React, TypeScript, and Firebase solutions. With ML expertise gained as an AI intern at Digital Motives, I led the training of 3 ML systems,
-                        enhanced frameworks, and conducted extensive searches for training datasets. Pursuing a B.Tech in CSE (AI & ML) at VBIT, expected to graduate May 2024. Passionate about cutting-edge tech, I bring hands-on ML experience and diverse
-                        skills. Eager to contribute programming, AI, and cybersecurity expertise, valuing collaboration, innovation, and excellence.
-                    </p>
-                </div>
+        <div class="about-details">
+            <div class="left">
+                <div class="text">I'm Ashish Gajjela, a Machine Learning Engineer</div>
+                <p>
+                    AI and ML enthusiast with a proven track record as a Programming Lead at coding.Studio, adept in overseeing end-to-end software development, and contributing to innovative projects, including Ancient Sanskrit Text Recognition and Translation.
+                    <br><br> Skilled in Python, React, and various technologies, with a strong foundation in Artificial Intelligence and Competitive Programming.</p>
+                <button id="resume-button" onclick="openResume()">Download Resume</button>
+            </div>
+            <div class="right">
+                <img src="Images/about.png" alt="">
             </div>
         </div>
     </section>
 
-    <!-- My Skill Section Start -->
-    <section class="skills" id="skills">
-        <div class="content">
-            <div class="title"><span>My Skills</span></div>
-            <div class="skills-details">
-                <div class="categories">
-                    <!-- Programming Languages -->
-                    <div class="category">
-                        <div class="topic">Programming Languages</div>
-                        <div class="skills-list">
-                            <div class="skill"><i class="fa-brands fa-python fa-4x"></i></div>
-                            <div class="skill"><i class="fa-brands fa-java fa-4x"></i></div>
-                            <div class="skill"><i class="fa-solid fa-c fa-4x"></i></div>
-                            <div class="skill">SQL</div>
-                            <div class="skill"><i class="fa-brands fa-r-project fa-4x"></i></div>
-                        </div>
-                    </div>
-
-                    <!-- Developer Tools-->
-                    <div class="category">
-                        <div class="topic">Developer Tools</div>
-                        <div class="skills-list">
-                            <div class="skill">VS Code</div>
-                            <div class="skill">Dev C++</div>
-                            <div class="skill">Eclipse</div>
-                            <div class="skill">Jupyter Notebook</div>
-                            <div class="skill">LabelImg</div>
-                            <div class="skill"><i class="fa-brands fa-github fa-3x"></i></div>
-                            <div class="skill">Spyder</div>
-                        </div>
-                    </div>
-
-                    <!-- Web Development -->
-                    <div class="category">
-                        <div class="topic">Web Development</div>
-                        <div class="skills-list">
-                            <div class="skill"><i class="fa-brands fa-html5 fa-4x"></i></div>
-                            <div class="skill"><i class="fa-brands fa-css3 fa-3x"></i></div>
-                            <div class="skill"><i class="fa-brands fa-js fa-3x"></i></div>
-                            <div class="skill"><i class="fa-brands fa-react fa-3x"></i></div>
-                            <div class="skill">TypeScript</div>
-                            <div class="skill">Tailwind CSS</div>
-                            <div class="skill">Flask</div>
-                            <div class="skill">Firebase</div>
-                        </div>
-                    </div>
-
-                    <!-- Machine Learning & AI -->
-                    <div class="category">
-                        <div class="topic">Machine Learning & Artificial Intelligence</div>
-                        <div class="skills-list">
-                            <div class="skill">Machine Learning</div>
-                            <div class="skill">Tensorflow</div>
-                            <div class="skill">scikit-learn</div>
-                            <div class="skill">NumPy</div>
-                            <div class="skill">pandas</div>
-                            <div class="skill">OpenCV</div>
-                        </div>
-                    </div>
-
-                    <!-- Other Skills -->
-                    <div class="category">
-                        <div class="topic">Other Skills</div>
-                        <div class="skills-list">
-                            <div class="skill">Zenmap</div>
-                            <div class="skill">Nmap</div>
-                            <div class="skill">Bettercap</div>
-                            <div class="skill">OWASP ZAP</div>
-                            <div class="skill">Metasploit Framework</div>
-                        </div>
-                    </div>
+    <section class="Skills" id="skills">
+        <h1>Technical Skills</h1>
+        <div class="skills-container">
+            <div class="skill-card-row">
+                <div class="skill-card">
+                    <img src="Images/python.png" alt="Python logo">
+                    <h2>Python</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="Images/react.png" alt="React logo">
+                    <h2>React</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="Images/typescript.png" alt="TypeScript logo">
+                    <h2>TypeScript</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="Images/tensorflow.png" alt="TensorFlow logo">
+                </div>
+                <div class="skill-card">
+                    <img src="Images/scikit-learn.png" alt="scikit-learn logo">
+                </div>
+                <div class="skill-card">
+                    <img src="Images/NumPy.png" alt="NumPy logo">
+                    <h2>NumPy</h2>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Projects Section Start -->
-    <section class="projects" id="projects">
-        <div class="content">
-            <div class="title"><span>Projects</span></div>
-            <!-- Add your project details or showcase here -->
+            <div class="skill-card-row">
+                <div class="skill-card">
+                    <img src="Images/pandas.png" alt="Pandas logo">
+                    <h2>Pandas</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="Images/opencv.png" alt="OpenCV logo">
+                    <h2>OpenCV</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="Images/flask.png" alt="Flask logo">
+                </div>
+                <div class="skill-card">
+                    <img src="Images/tailwind.png" alt="Tailwind CSS logo">
+                    <h2>Tailwind CSS</h2>
+                </div>
+                <div class="skill-card">
+                    <img src="Images/firebase.png" alt="Firebase logo">
+                    <h2>Firebase</h2>
+                </div>
+            </div>
         </div>
     </section>
 
