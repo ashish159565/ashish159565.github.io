@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Montserrat', 'Ubuntu', sans-serif;
+}
+
 
 /* Custom Scroll Bar CSS */
 
@@ -133,166 +137,18 @@ nav.sticky .menu-btn {
 }
 
 
-/* home section styling */
-
-.card {
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    padding: 30px;
-    align-self: center;
-    align-content: center;
-}
-
-.flex-wrap-skills {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.skill-logo {
-    height: 100px;
-    width: 90px;
-}
-
-body {
-    font-family: 'Montserrat', 'Ubuntu', sans-serif;
-}
-
-.h1 {
-    color: #0E2431;
-    margin-bottom: 10px;
-    text-align-last: center;
-}
-
-.home {
-    height: 100vh;
-    width: 100%;
-    font-family: 'Montserrat', 'Ubuntu', sans-serif;
-}
-
-.home .home-content {
-    width: 90%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.about .about-details .left .text {
-    font-size: 60px;
-    margin: 5px 0;
-    font-weight: 500;
-}
-
-.left .p {
-    text-align: justify;
-    text-justify: inter-word;
-}
-
-.home .button {
-    margin: 14px 0;
-}
-
-.home .button button {
-    outline: none;
-    padding: 8px 16px;
-    border-radius: 6px;
-    font-size: 25px;
-    font-weight: 400;
-    background: #4070f4;
-    color: #fff;
-    cursor: pointer;
-    border: 2px solid transparent;
-    transition: all 0.4s ease;
-}
-
-.home .button button:hover {
-    border-color: #4070f4;
-    background-color: #fff;
-    color: #4070f4;
-}
-
-
-/* About Section Styling */
-
-
-/* Those Elements Where We Have Apply Same CSS,
- I'm Selecting Directly 'Section Tag' and 'Class'  */
+/* Common Styling for all Sections */
 
 section {
     padding-top: 40px;
-}
-
-section .content {
-    width: 80%;
-    margin: 40px auto;
-    font-family: 'Poppins', sans-serif;
-}
-
-.about .about-details {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 60px;
-    margin: 50px;
 }
 
 section .title {
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
-}
-
-section .title span {
-    color: #0E2431;
-    font-size: 30px;
-    font-weight: 600;
-    position: relative;
-    padding-bottom: 8px;
-}
-
-section .title span::before,
-section .title span::after {
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    background: #4070f4;
-    left: 0;
-    bottom: 0;
-}
-
-section .title span::after {
-    bottom: -7px;
-    width: 70%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.about .about-details .left {
-    width: 55%;
-}
-
-.about .right img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 12px;
-    border: 2px solid black;
-}
-
-section .topic {
-    color: #0E2431;
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-.about-details .right p {
-    text-align: justify;
-    color: #0E2431;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 section .button {
@@ -303,7 +159,7 @@ section .button button {
     outline: none;
     padding: 8px 16px;
     border-radius: 4px;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 400;
     background: #4070f4;
     color: #fff;
@@ -319,89 +175,73 @@ section .button button:hover {
 }
 
 
+/* Home Section Styling */
+
+.home .home-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    margin: 50px;
+}
+
+.home .home-details .left {
+    width: 55%;
+}
+
+.home-details .left p {
+    text-align: justify;
+    color: #0E2431;
+}
+
+.home .home-details .left .text {
+    font-size: 60px;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.home .right img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid black;
+}
+
+
 /* My Skills CSS */
 
-.skills {
-    background: #F0F8FF;
-}
-
-.skills-details .text {
-    width: 50%;
-}
-
-.skills-details p {
-    color: #0E2431;
-    text-align: justify;
-}
-
-.skills .skills-details .experience {
+.skills-container {
+    width: 80%;
+    margin: auto;
     display: flex;
-    align-items: center;
-    margin: 0 10px;
+    flex-direction: column;
 }
 
-.skills-details .experience .num {
-    color: #0E2431;
-    font-size: 80px;
-}
-
-.skills-details .experience .exp {
-    color: #0E2431;
-    margin-left: 20px;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 0 6px;
-}
-
-.skills-details .boxes {
-    width: 45%;
+.skill-card-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
-.skills-details .box {
-    width: calc(100% / 2 - 20px);
-    margin: 20px 0;
-}
-
-.skills-details .boxes .topic {
-    font-size: 20px;
-    color: #4070f4;
-}
-
-.skills-details .boxes .per {
-    font-size: 60px;
-    color: #4070f4;
-}
-
-.skills-details {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 20px;
-}
-
-.skill {
+.skill-card {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
     padding: 10px;
-    font-size: large;
 }
 
-
-/* Contact Me CSS */
-
-.contact {
-    background: #F0F8FF;
+.skill-card img {
+    width: 100%;
+    height: 100%;
 }
 
-.contact .content {
-    margin: 0 auto;
-    padding: 30px 0;
-}
-
-.contact .text {
-    width: 80%;
+.skill-card h2 {
     text-align: center;
-    margin: auto;
+    white-space: nowrap;
 }
 
 
@@ -455,27 +295,23 @@ footer .text span a:hover {
 }
 
 @media (max-width: 1000px) {
-    .about .about-details {
+    .home .home-details {
         justify-content: center;
         flex-direction: column;
     }
-    .about .about-details .left {
+    .home .home-details .left {
         display: flex;
         width: 100%;
         flex-direction: column;
     }
-    .about-details .right {
+    .home-details .right {
         width: 90%;
         margin: 40px 0;
-    }
-    .services .boxes .box {
-        margin: 20px 0;
-        width: calc(100% / 2 - 20px);
     }
 }
 
 @media (max-width: 900px) {
-    .about .right img {
+    .home .right img {
         height: 350px;
         width: 350px;
         border: 2px solid black;
@@ -518,42 +354,9 @@ footer .text span a:hover {
     .navbar .menu .cancel-btn {
         display: block;
     }
-    .home .text-two {
-        font-size: 65px;
-    }
-    .home .text-three {
-        font-size: 35px;
-    }
-    .skills .skills-details {
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .skills-details .text {
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .skills-details .boxes {
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .services .boxes .box {
-        margin: 20px 0;
-        width: 100%;
-    }
-    .contact .text {
-        width: 100%;
-    }
 }
 
 @media (max-width: 500px) {
-    .home .text-two {
-        font-size: 55px;
-    }
-    .home .text-three {
-        font-size: 33px;
-    }
     .skills-details .boxes .per {
         font-size: 50px;
         color: #4070f4;
@@ -566,52 +369,4 @@ footer .text span a:hover {
         padding: 10px;
         margin: 10px;
     }
-}
-
-.skills-container {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.skill-card img {
-    width: 100%;
-    height: 100%;
-}
-
-.skill-card h2 {
-    text-align: center;
-    white-space: nowrap;
-}
-
-.skill-card {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    margin: 10px;
-    padding: 10px;
-}
-
-h1 {
-    text-align: center;
-}
-
-.skill-card-row {
-    display: flex;
-    flex-wrap: wrap;
-    align-self: center;
-    margin-top: 10px;
-    margin-bottom: 50px;
-}
-
-#resume-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #4070f4;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    margin-top: 50px;
 }
