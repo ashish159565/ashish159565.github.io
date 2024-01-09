@@ -9,6 +9,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    width: 100%;
+}
+
 body {
     font-family: 'Montserrat', 'Ubuntu', sans-serif;
 }
@@ -179,10 +183,10 @@ section .button button:hover {
 
 .home .home-details {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-content: center;
     padding: 60px;
     margin: 50px;
+    justify-content: space-evenly;
 }
 
 .home .home-details .left {
@@ -198,6 +202,7 @@ section .button button:hover {
     font-size: 60px;
     margin: 5px 0;
     font-weight: 500;
+    text-align: center;
 }
 
 .home .right img {
@@ -206,10 +211,11 @@ section .button button:hover {
     object-fit: cover;
     border-radius: 12px;
     border: 2px solid black;
+    align-self: center;
 }
 
 
-/* My Skills CSS */
+/* Technical Skills CSS */
 
 .skills-container {
     width: 80%;
@@ -242,6 +248,74 @@ section .button button:hover {
 .skill-card h2 {
     text-align: center;
     white-space: nowrap;
+}
+
+
+/* Experience CSS */
+
+.experience-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-card {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: auto;
+    align-self: center;
+    justify-content: space-evenly;
+}
+
+.experience-cards .experience-card .left {
+    width: 40%;
+    height: auto;
+    padding: 30px;
+    margin: 20px;
+    align-self: center;
+    text-align: center;
+}
+
+.experience-cards .experience-card .right {
+    width: 40%;
+    height: auto;
+    padding: 30px;
+    margin: 20px;
+    align-self: center;
+}
+
+.company-name {
+    font-size: 30px;
+    font-weight: 500;
+    color: #4070f4;
+}
+
+.company-name .horizontal {
+    height: auto;
+    width: auto;
+}
+
+.company-name img {
+    height: 130px;
+    width: 130px;
+    align-self: center;
+}
+
+.duration {
+    font-size: 15px;
+}
+
+.role {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline #4070f4 solid 2px;
+    padding: 5px;
+    align-self: center;
+}
+
+.description {
+    align-items: center;
+    padding: 5px;
 }
 
 
@@ -292,29 +366,42 @@ footer .text span a:hover {
     section .content {
         width: 85%;
     }
+    section .home-details {
+        padding: 40px;
+    }
+    .skills-container {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1000px) {
     .home .home-details {
-        justify-content: center;
         flex-direction: column;
+        padding: 20px;
+        margin: 20px;
     }
     .home .home-details .left {
-        display: flex;
         width: 100%;
-        flex-direction: column;
+        text-align: center;
     }
     .home-details .right {
-        width: 90%;
-        margin: 40px 0;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .home .home-details .right img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        border: 2px solid black;
+        align-self: center;
     }
 }
 
 @media (max-width: 900px) {
-    .home .right img {
-        height: 350px;
-        width: 350px;
-        border: 2px solid black;
+    .home .home-details .right img {
+        height: 300px;
+        width: 300px;
     }
 }
 
@@ -357,16 +444,37 @@ footer .text span a:hover {
 }
 
 @media (max-width: 500px) {
-    .skills-details .boxes .per {
-        font-size: 50px;
-        color: #4070f4;
-    }
-    .about .about-details .right img {
-        max-width: 100%;
+    .home .home-details .right img {
         height: auto;
+        width: auto;
     }
-    .about .about-details {
+    .skill-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .company-name img {
+        height: 80px;
+        width: 80px;
         padding: 10px;
-        margin: 10px;
+    }
+    .experience-card {
+        flex-direction: column;
+        width: 100%;
+    }
+    .experience-cards .experience-card .left,
+    .experience-cards .experience-card .right {
+        width: 100%;
+        text-align: center;
+    }
+    .duration,
+    .role,
+    .description {
+        text-align: center;
+    }
+    footer .text span {
+        font-size: 15px;
+    }
+    .scroll-button a {
+        right: 10px;
     }
 }
